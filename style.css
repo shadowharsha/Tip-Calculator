@@ -1,0 +1,248 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora&family=Poppins:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
+
+/* CSS RESET */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* font-family: 'Lora', serif;
+   font-family: 'Poppins', sans-serif;
+    */
+
+:root{
+    font-size: 62.5%;
+}
+
+body{
+    font-size: 1.6rem;
+    font-family: "Roboto Mono", monospace;
+}
+
+/* input */
+
+input{
+    display: inline-block;
+    border: none;
+    outline: none;
+    background: #f2f8fb;
+    padding: 0.5rem 1rem;
+    width: 100%;
+    color: #00474a;
+    font-size: 1.6rem;
+    font-weight: bold;
+    text-align: right;
+    border-radius: 0.4rem;
+    font-family: "Roboto Mono", monospace;
+}
+
+input:focus{
+    border: 0.1px solid #27c2ae;
+}
+
+input::placeholder{
+    text-align: left;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Container */
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 5rem;
+    background: #c4e4e7;
+    min-height: 100vh;
+}
+
+/* heading */
+.container h3{
+    font-size: 1.8rem;
+    font-family: 'Poppins', sans-serif;
+    letter-spacing: 0.8rem;
+    text-transform: uppercase;
+    color: #00474A;
+}
+
+/* calculator container */
+.calculator{
+    display: flex;
+    width: 55%;
+    background: #fff;
+    font-size: 1.4rem;
+    border-radius: 1.4rem;
+}
+
+.left, .right{
+    flex: 1;
+}
+
+/* left */
+.left{
+    margin: 3rem;
+}
+
+.bill-amount .bill{
+    margin-bottom: 1rem;
+}
+
+.bill-amount input{
+    margin-bottom: 2rem;
+}
+
+.select-tip{
+    margin-bottom: 1rem;
+}
+
+.low-tip, .high-tip{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.6rem;
+    margin-bottom: 1rem;
+    
+}
+
+.low-tip button, .high-tip button, .high-tip input{
+    flex: 1;
+    padding: 0.5rem 1.8rem;
+    font-size: 1.5rem;
+    font-family: "Roboto Mono", monospace;
+    background: #00474a;
+    color: #fff;
+    border: none;
+    border-radius: 0.3rem;
+    cursor: pointer;
+    font-weight: 400;
+}
+
+.high-tip input{
+    background: #f2f8fb;
+    padding: 0.5rem 1.8rem;
+    color: #00474A;
+}
+
+.high-tip input:focus{
+    border: 0.1px solid #27c2ae;
+}
+
+.high-tip input::placeholder{
+    text-align: center;
+}
+
+.low-tip button:hover, .high-tip button:hover{
+    background: #c4e4e7;
+    color: #00474A;
+}
+
+.low-tip button:focus, .high-tip button:focus{
+    background: #27c2ae;
+    color: #00474A;
+}
+
+
+.people-no{
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+}
+
+.people-count-container{
+    position: relative;
+}
+
+.noPeople{
+    position: absolute;
+    top: 0;
+    right: 0;
+    color: #fff;
+    /* visibility: hidden; */
+}
+
+.errorByZero{
+    color: crimson;
+
+}
+
+img{
+    position: absolute;
+    bottom: 0.93rem;
+    left: 1rem;
+    background: #f2f8fb;
+    margin-right: 1rem;
+}
+
+/* right */
+
+.right{
+    margin: 3rem 3rem 3rem 0rem;
+    background: #00474A;
+    border-radius: 1rem;
+}
+
+.total-tip-amount, .whole-total{
+    display:flex ;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem;
+}
+
+.rg-1, .rg-2{
+    color:#fff
+}
+
+.per-person{
+    opacity: 50%;
+}
+
+.display{
+    color: #27c2ae;
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.reset{
+    display: block;
+    width: 80%;
+    margin: 5rem auto 2rem;
+    padding: 0.8rem ;
+    font-size: 1.4rem;
+    background: #27c2ae;
+    color: #00474A;
+    border: none;
+    border-radius: 0.3rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.reset:active{
+    color: #00474A;
+    background: #c4e4e7;
+}
+
+/* for mobile */
+
+@media only screen and (max-width:600px){
+
+    .calculator{
+        width: 100%;
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+
+    .right{
+        margin: 3rem;
+    }
+
+   .high-tip, .low-tip{
+    flex-wrap: wrap;
+   }
+
+}

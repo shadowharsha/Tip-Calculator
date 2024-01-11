@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tip Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h3>spli<br>tter</h3>
+        <div class="calculator">
+            <div class="input-container left">
+                <div class="bill-amount">
+                    <div class="bill">Bill</div>
+                    <input type="number" class="initial-bill-amount" placeholder="$">
+                </div>
+                <div class="tip-container">
+                    <div class="select-tip">Select Tip %</div>
+                    <div class="low-tip">
+                        <button>5%</button>
+                        <button>10%</button>
+                        <button>15%</button>
+                    </div>
+                    <div class="high-tip">
+                        <button>25%</button>
+                        <button>50%</button>
+                        <input type="number" placeholder="Custom" class="custom">
+                    </div>
+                </div>
+                <div class="people-count-container">
+                    <div class="people-no">Number of People</div>
+                    <span class="noPeople">Can't be zero</span>  
+                    <input type="number" class="people-count">
+                    <img src="icons8-person-16.png" alt="">
+                </div>
+            </div>
+            <div class="result-container right">
+                <div class="total-tip-amount">
+                    <div class="rg-1">
+                        <p class="tip-amount">Tip Amount</p>
+                        <p class="per-person">/ person</p>
+                    </div>
+                    <div class="display-tip display">$0.00</div>
+                </div>
+                <div class="whole-total">
+                    <div class="rg-2">
+                        <p class="total">Total</p>
+                        <p class="per-person">/ person</p>
+                    </div>
+                    <div class="display-bill display">$0.00</div>
+                </div>
+                <button class="reset">RESET</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>
